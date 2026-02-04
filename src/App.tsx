@@ -7,7 +7,7 @@ const LazyComponent = React.lazy(() => import("./components/LazyComponent"));
 function App() {
   const [count, SetCount] = useState(0);
   const [showLazy, setShowLazy] = useState(false);
-
+   
   const increment = useCallback(() => {
     SetCount((prev) => prev + 1);
   }, []);
